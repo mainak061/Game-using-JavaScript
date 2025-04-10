@@ -46,7 +46,7 @@ const playGame = (userChoice) => {
       userWin= comChoice=== "rock" ? false:true;
     }
 
-  
+
 
 
 const showWinner=(userWin, userChoice,comChoice) => {
