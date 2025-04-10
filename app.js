@@ -7,6 +7,8 @@ const msg = document.querySelector("#msg");
 const userScorePara = document.querySelector("#user-score");
 const comScorePara = document.querySelector("#computer-score");
 
+const resetBtn = document.getElementById("reset");
+
 // defining computer can choose from three choices
 
 const genCompChoice = () => {
@@ -74,4 +76,14 @@ choices.forEach((choice) => {
     const userChoice = choice.getAttribute("id");
     playGame(userChoice);
   });
+});
+
+resetBtn.addEventListener("click", () => {
+  userScore = 0;
+  comScore = 0;
+  userScorePara.innerText = userScore;
+  comScorePara.innerText = comScore;
+  msg.innerText = "Game reset. Let's play!";
+  msg.style.backgroundColor = "#081b31";
+  console.log("Game has been reset.");
 });

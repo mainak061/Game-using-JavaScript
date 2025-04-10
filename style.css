@@ -73,3 +73,12 @@ img {
     /* margin-bottom: 15rem;
     gap: 2rem; */
 }
+
+#reset {
+    background-color: #592929;
+    color: aliceblue;
+    font-size: 2rem;
+    display:inline;
+    border-radius: 19rem;
+    padding: 1rem;
+}
