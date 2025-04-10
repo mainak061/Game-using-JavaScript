@@ -54,14 +54,14 @@ const showWinner=(userWin, userChoice,comChoice) => {
     userScore++;
     userScorePara.innerText=userScore;
     console.log("You Win!!!");
-    msg.innerText = `You Win!! Your${userChoice} beats ${comChoice}`;
+    msg.innerText = `You Win!! Your ${userChoice} beats ${comChoice}`;
     msg.style.backgroundColor = "green"
   }
   else{
     console.log("you lost");
     comScore++;
     comScorePara.innerText=comScore;
-    msg.innerText = `You lost.${comChoice} beats your ${userChoice}`;
+    msg.innerText = `You lost. ${comChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = "red"
 }
 }
